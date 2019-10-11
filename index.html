@@ -51,6 +51,11 @@
         fill: none;
         stroke-miterlimit: 10;
         transform: translateZ(0);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         perspective: 1000;
       }
