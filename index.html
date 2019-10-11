@@ -50,17 +50,21 @@
       .cls-1, .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
         fill: none;
         stroke-miterlimit: 10;
-        animation: dash 5s linear forwards;
-      }
-
-      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
-        stroke-dasharray: 200;
-        stroke-dashoffset: 200;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        perspective: 1000;
       }
 
       .cls-1, .cls-10 {
         stroke-dasharray: 10000;
         stroke-dashoffset: 10000;
+        animation: dash 5s linear forwards;
+        animation-delay: 1s;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
       }
 
       @keyframes dash {
@@ -79,43 +83,61 @@
 
       .cls-2 {
         stroke: #ed1c24;
+        animation: dash 5s linear forwards;
+        animation-delay: 2s;
       }
 
       .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
         stroke-width: 4px;
-        animation: dash 5s linear forwards;
       }
 
       .cls-3 {
         stroke: #0070b5;
+        animation: dash 5s linear forwards;
+        animation-delay: 2.5s;
       }
 
       .cls-4 {
         stroke: #f26522;
+        animation: dash 5s linear forwards;
+        animation-delay: 3s;
       }
 
       .cls-5 {
         stroke: #009b54;
+        animation-delay: 5s;
+        animation: dash 5s linear forwards;
+        animation-delay: 3.5s;
       }
 
       .cls-6 {
         stroke: #f6d01d;
+        animation: dash 5s linear forwards;
+        animation-delay: 4s;
       }
 
       .cls-7 {
         stroke: #92278f;
+        animation: dash 5s linear forwards;
+        animation-delay: 4.5s;
       }
 
       .cls-8 {
         stroke: #808285;
+        animation: dash 5s linear forwards;
+        animation-delay: 5s;
       }
 
       .cls-9 {
         stroke: #b5772b;
+        animation: dash 5s linear forwards;
+        animation-delay: 5.5s
       }
 
       .cls-11 {
         stroke: #b6752b;
+        animation: dash 5s linear forwards;
+        animation-delay: 6s;
       }
     </style>
   </defs>
